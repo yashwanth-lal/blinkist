@@ -1,0 +1,271 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for src/loginbutton.tsx</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">src</a> loginbutton.tsx</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">42.85% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>3/7</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>0/0</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>0/2</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">42.85% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>3/7</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input oninput="onInput()" type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line low'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&nbsp;
+import { useAuth0 } from "@auth0/auth0-react";
+import { makeStyles } from "@mui/styles";
+import { Button } from "@mui/material";
+import styled from "@emotion/styled";
+&nbsp;
+const Bg = styled("div")({
+  
+  backgroundImage:"url("+"https://wallpaperaccess.com/full/2314983.jpg"+")",
+  backgroundSize:"cover",
+  height:"100vh",
+  paddingLeft:70
+})
+&nbsp;
+const useStyles= makeStyles({
+login:{
+positon:"relative",
+top:34,
+marginLeft:"700px",
+},
+text:{
+  marginRight:400,
+  color:"red"
+}
+})
+const LoginButton = <span class="fstat-no" title="function not covered" >()</span> =&gt; {
+  const { loginWithRedirect } = <span class="cstat-no" title="statement not covered" >useAuth0();</span>
+  const classes= <span class="cstat-no" title="statement not covered" >useStyles()</span>
+<span class="cstat-no" title="statement not covered" >  return (</span>
+      &lt;&gt;
+&nbsp;
+      &lt;Bg data-testid="background"&gt;
+     &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
+     &lt;br /&gt;
+     &lt;br /&gt;
+     &lt;br /&gt;
+     
+           &lt;img style={{marginLeft:650,padding:20,borderRadius:40,marginBottom:20}} src="data:image/png;base64,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" alt="Paris" /&gt;
+&nbsp;
+     
+  &lt;div className={classes.login} &gt;
+  &lt;Button style={{
+          maxWidth: "100px",
+          maxHeight: "100px",
+          minWidth: "300px",
+          minHeight: "70px",
+          marginLeft:20
+        }}
+         className="classes.login"
+          variant ="contained" 
+          size="large" 
+          onClick={<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >loginWithRedirect()} </span>
+          color='primary'&gt;Log In &lt;/Button&gt;
+  
+  &lt;/div&gt;
+&nbsp;
+  &lt;h1 style={{color:"white",width:800,marginLeft:530,marginTop:50}}&gt;PLEASE LOGIN TO ENTER THE BLINKIST APP&lt;/h1&gt;
+  &lt;/Bg&gt;
+  &lt;/&gt;
+  )
+};
+&nbsp;
+export default LoginButton;</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at Mon Jun 13 2022 20:58:41 GMT+0530 (India Standard Time)
+            </div>
+        <script src="../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../sorter.js"></script>
+        <script src="../block-navigation.js"></script>
+    </body>
+</html>
+    
