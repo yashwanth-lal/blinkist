@@ -11,7 +11,6 @@ import { AboutBook } from "../AboutBook/aboutbookO";
 import BeyondEntrepreneur from '../../../images/beyondEntrepreneurship.svg'
 import { BookInfo } from "../Card/cardO";
 import { useEffect, useState } from "react";
-import api from "../../../api/api";
 import { useNavigate } from "react-router-dom";
 
 

@@ -15,12 +15,7 @@ let useStyles = makeStyles({
         alignItems: 'center',
         overflowX:"hidden"
     },
-    // login: {
-    //     display: 'flex',
-    //     flexDirection: 'column',
-    //     alignItems: 'center',
-    //     zIndex:0
-    // }
+    
 })
 
 export const MyLibrary = (props: MyLibraryProps) => {

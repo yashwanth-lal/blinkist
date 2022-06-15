@@ -25,7 +25,7 @@ describe("Extended Nav Test", () => {
         });
         
         test("onClick",()=>{
-            var result = false;
+            let result = false;
             render(<TestExtendedNav />)
             fireEvent.click(screen.getByText("Entrepreneurship"));
             expect(result).toBe(false);

@@ -38,7 +38,7 @@ const useStyles = makeStyles({
 export const SearchBarComponent = () => {
   const [search, setSearch] = useState("");
   const classes = useStyles();
-  // console.log(search)
+  
   return (
     <ThemeProvider theme={theme}>
       <Box className={classes.boxElement}>

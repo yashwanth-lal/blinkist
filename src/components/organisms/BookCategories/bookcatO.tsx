@@ -46,11 +46,8 @@ const Categories = (props: CardProps) => {
   const [title, setTitle] = useState("")
   const searchInput= ftitle;
   let lowerCaseText=searchInput?.toLowerCase()
-  // console.log("small"+lowerCaseText)
+ 
   let styles = useStyles()
-  
-  // console.log(searchInput)
-
   
   let filterBooks = (statusOfBlink: string) => {
     if (statusOfBlink === "featured") {

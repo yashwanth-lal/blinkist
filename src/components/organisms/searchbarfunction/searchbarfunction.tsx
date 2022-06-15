@@ -37,7 +37,6 @@ imageProps: {
 });
 export default function Find({setTitle}:{setTitle:any}) {
   const classes = useStyles();
-  // const [filter,setFilter]= React.useState('');
   const searchText = (event:any)=>{
     setTitle(event)
   }

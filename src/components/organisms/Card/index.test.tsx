@@ -1,7 +1,5 @@
-import { Button } from "@mui/material";
-import { fireEvent, render, screen } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import {BrowserRouter} from 'react-router-dom'
-import { ButtonComponent } from "../../atoms/Button/buttonA";
 import {Card} from './cardO'
 
 let TestCard = (args: any) => {
@@ -83,11 +81,7 @@ describe("Card test", () => {
         const element = screen.getByAltText("Picture_")
         expect(element).toBeInTheDocument()
     })
-    // it("renders a explore card",()=>{
-    //     render(<Card image={BookInfo.image} author={BookInfo.author} timeToRead={BookInfo.timeToRead} numberOfReads={BookInfo.numberOfReads} isFinished={BookInfo.isFinished} value={0} />);
-    //     const ButtonElement = screen.getByTestId("add");
-    //     expect(ButtonElement).toBeInTheDocument();
-    // })
+    
     
 })
 

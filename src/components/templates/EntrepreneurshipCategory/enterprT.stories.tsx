@@ -5,7 +5,6 @@ import { FooterComponent } from "../../organisms/Footer/footerO.stories";
 import { HeaderComponent } from "../../organisms/Header/headerO";
 import { Entrepreneurship, EntrepreneurshipProps } from "./enterprT";
 import Library from "../../../data/Library"
-import { SearchBar } from "../../molecules/SearchBar/searchbarM.stories";
 import {MemoryRouter} from 'react-router-dom'
 
 

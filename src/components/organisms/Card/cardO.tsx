@@ -214,13 +214,8 @@ export const Card = (props: CardProps) => {
 
 
   let addToCurrentlyReading = async (num: number) => {
-    // console.log("book: "+JSON.stringify(bookInfo))
    
-      bookInfo.status.isFinished = false
-    
-    // bookInfo.status.isTrending = false
-   
-    
+    bookInfo.status.isFinished = false
     await api.put(`/library/${num}`, bookInfo)
   }
 

@@ -36,7 +36,7 @@
       "numberOfReads": "1.9k reads",
       "image": "../images/doesntHurtToAsk.svg",
       "status": {
-        "isFinished": false,
+        "isFinished": true,
         "isTrending": false,
         "justAdded": false,
         "isFeatured": true

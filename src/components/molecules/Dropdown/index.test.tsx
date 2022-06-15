@@ -1,6 +1,4 @@
 import { render, screen } from "@testing-library/react";
-import { title } from "process";
-import { MemoryRouter } from "react-router-dom";
 import { Dropdown } from "./dropdownM";
 
 describe("Dropdown test", () => {

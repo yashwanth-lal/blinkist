@@ -15,7 +15,7 @@ export interface ButtonIconProps {
 }
 
 export const ButtonComponent = (props: any) => {
-    let {startIcon, endIcon, variant, style, children, onMouseEnter, onMouseLeave, onClick, className,disabe} = props
+    let {startIcon, endIcon, variant, style, children, onMouseEnter, onMouseLeave, onClick, className} = props
     return (
         <Button 
         startIcon={startIcon}

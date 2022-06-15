@@ -1,4 +1,3 @@
-import React from "react";
 import {Icons, IconProps} from './iconA'
 import {Story} from '@storybook/react'
 import BlinkistLogo from '../../../images/blinkistlogo.svg'

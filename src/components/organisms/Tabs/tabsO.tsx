@@ -79,8 +79,8 @@ export const Tabs = () => {
 
   let styles = useStyles();
   //no books message
- var emptyCurrent=books.filter(item => !item.status.isFinished).length === 0 ? <Typography    sx={{fontSize:50}}>No books to add</Typography> :null;
- var emptyFinished=books.filter(item => item.status.isFinished).length === 0 ? <Typography    sx={{fontSize:50}}>No books to show</Typography> :null;
+ let emptyCurrent=books.filter(item => !item.status.isFinished).length === 0 ? <Typography    sx={{fontSize:50}}>No books to add</Typography> :null;
+ let emptyFinished=books.filter(item => item.status.isFinished).length === 0 ? <Typography    sx={{fontSize:50}}>No books to show</Typography> :null;
 
   return (
     <ThemeProvider theme={theme}>
