@@ -1,7 +1,7 @@
-import MyLibrary from "./pages/MyLibrary/mylibP";
-import EntrepreneurshipPage from './pages/Entrepreneurship/enterpreneurshipP'
+import MyLibrary from "./pages/MyLibrary/LibraryPage";
+import EntrepreneurshipPage from './pages/Entrepreneurship/EntrepreneurshipPage'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import BookDetailsPage from "./pages/BookDetails/bookdetailsP";
+import BookDetailsPage from "./pages/BookDetails/BookDetailsPage";
 import './App.css';
 import LoginButton from './loginbutton';
 import {useAuth0} from '@auth0/auth0-react';
