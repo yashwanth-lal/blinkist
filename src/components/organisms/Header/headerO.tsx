@@ -8,7 +8,7 @@ import { Dropdown } from "../../molecules/Dropdown/dropdownM";
 import { ExtendedNav } from "../ExtendedNav/extendednavO";
 import theme from '../../themes/theme'
 import {useNavigate} from 'react-router-dom'
-import LogoutButton from "../../../logout";
+import LogoutButton from "../../../LogoutButton";
 
 
 const MainContainer = styled("div")({

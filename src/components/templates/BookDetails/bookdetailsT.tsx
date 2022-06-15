@@ -25,7 +25,7 @@ let Whole = styled("div")({
   overflowX: "hidden",
   maxHeight:"auto"
 })
-var head = styled("div")({
+let head = styled("div")({
   position:"relative"
 })
 

@@ -1,5 +1,4 @@
 import { styled } from "@mui/styles";
-import Find from "../../organisms/searchbarfunction/searchbarfunction";
 export interface EntrepreneurshipProps {
     header: React.ReactNode;
     footer: React.ReactNode;

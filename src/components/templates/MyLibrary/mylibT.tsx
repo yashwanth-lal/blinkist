@@ -1,6 +1,5 @@
 import { Box } from "@mui/material";
 import { makeStyles } from "@mui/styles";
-import {HeaderComponent} from '../../organisms/Header/headerO'
 
 export interface MyLibraryProps {
     header: React.ReactNode;

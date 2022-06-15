@@ -12,7 +12,7 @@ const useStyles = makeStyles(() => ({
 export const TabsComponent = () => {
   const [value, setValue] = useState("1");
   const [color, setColor] = useState("#22C870");
-  const handleChange = (event: React.SyntheticEvent, newValue: string) => {
+  const handleChange = (_event: React.SyntheticEvent, newValue: string) => {
     setValue(newValue);
     setColor(color);
   };

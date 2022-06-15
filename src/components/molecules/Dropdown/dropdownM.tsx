@@ -1,6 +1,6 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Typography,Avatar } from "@mui/material";
 import DropDownArrow from "../../../images/dropdownarrow.svg";
-import {Avatar} from "@mui/material";
+
 import { Icons } from "../../atoms/Icon/iconA";
 import { makeStyles } from "@mui/styles";
 

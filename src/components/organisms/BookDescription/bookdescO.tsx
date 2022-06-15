@@ -9,8 +9,6 @@ import { ButtonComponent } from "../../atoms/Button/buttonA";
 import { ReactComponent as Side } from "../../../images/side.svg";
 import { AboutBook } from "../AboutBook/aboutbookO";
 import BeyondEntrepreneur from '../../../images/beyondEntrepreneurship.svg'
-import { BookInfo } from "../Card/cardO";
-import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 
@@ -69,20 +67,7 @@ let RightContainer = styled("div") ({
 })
 
 export const BookDescription = () => {
-  const [bookInfo, setBookInfo] = useState<BookInfo>({
-    id: 1,
-    title: "",
-    author: "",
-    image: "",
-    timeToRead: "",
-    numberOfReads: "",
-    status: {
-      isFinished: false,
-      isTrending: false,
-      justAdded: false,
-      isFeatured: false
-    }
-  });
+  
 
   let navigate = useNavigate()
   let handleRead = async () => {

@@ -39,7 +39,7 @@ let useStyles = makeStyles({
 export const Tabs = () => {
   let [value, setValue] = useState("1");
 
-  let handleChange = (event: React.SyntheticEvent, newValue: string) => {
+  let handleChange = (_event: React.SyntheticEvent, newValue: string) => {
     // console.log(event)
     setValue(newValue);
   };

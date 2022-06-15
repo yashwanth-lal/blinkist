@@ -8,7 +8,7 @@
       "timeToRead": "13-min read",
       "numberOfReads": "1.9k reads",
       "status": {
-        "isFinished": false,
+        "isFinished": true,
         "isTrending": false,
         "isFeatured": false,
         "justAdded": false
