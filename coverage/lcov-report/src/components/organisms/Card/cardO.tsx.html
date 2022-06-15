@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">61.9% </span>
+                <span class="strong">65% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>26/42</span>
+                <span class='fraction'>26/40</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">61.9% </span>
+                <span class="strong">65% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>26/42</span>
+                <span class='fraction'>26/40</span>
             </div>
         
             
@@ -367,9 +367,7 @@
 <a name='L302'></a><a href='#L302'>302</a>
 <a name='L303'></a><a href='#L303'>303</a>
 <a name='L304'></a><a href='#L304'>304</a>
-<a name='L305'></a><a href='#L305'>305</a>
-<a name='L306'></a><a href='#L306'>306</a>
-<a name='L307'></a><a href='#L307'>307</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L305'></a><a href='#L305'>305</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -443,6 +441,8 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -571,24 +571,20 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">95x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">93x</span>
 <span class="cline-any cline-yes">93x</span>
 <span class="cline-any cline-yes">91x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">93x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">95x</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -598,7 +594,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -815,17 +811,19 @@ let useStyles = makeStyles({
 });
 &nbsp;
 export interface CardProps {
-  title?: string;
-  image?: string;
-  author?: string;
-  isFinished?: boolean;
-  addToLibrary?: boolean;
-  currentlyReading?: boolean;
-  readAgain?: boolean;
   id?: number;
+  title?: string;
+  author?: string;
   timeToRead?: string;
   numberOfReads?: string;
+  image?: string;
+  isFinished?: boolean;
+  addToLibrary?: boolean;
   value: number;
+&nbsp;
+&nbsp;
+  currentlyReading?: boolean;
+  readAgain?: boolean;
   className?: string;
   onClick?: () =&gt; void;
 }
@@ -877,24 +875,20 @@ export const Card = (props: CardProps) =&gt; {
   }
 &nbsp;
   useEffect(() =&gt; {
+    
     const retrieveBookById = async(val: number) =&gt; {
       if(val &amp;&amp; val !== 0) {
         const book = await api.get(`/library/${val}`)
         const data = <span class="cstat-no" title="statement not covered" >book.data</span>
 <span class="cstat-no" title="statement not covered" >        setBookInfo(data)</span>
-        }
-    }
-&nbsp;
+        }}
     retrieveBookById(value)
   }, [value])
+&nbsp;
+&nbsp;
   let addToCurrentlyReading = <span class="fstat-no" title="function not covered" >as</span>ync (num: number) =&gt; {
-<span class="cstat-no" title="statement not covered" >    console.log("book: "+JSON.stringify(bookInfo))</span>
    
-<span class="cstat-no" title="statement not covered" >      bookInfo.status.isFinished = false</span>
-    
-    // bookInfo.status.isTrending = false
-   
-    
+<span class="cstat-no" title="statement not covered" >    bookInfo.status.isFinished = false</span>
 <span class="cstat-no" title="statement not covered" >    await api.put(`/library/${num}`, bookInfo)</span>
   }
 &nbsp;
@@ -904,12 +898,12 @@ export const Card = (props: CardProps) =&gt; {
     }
     else {
 <span class="cstat-no" title="statement not covered" >      bookInfo.status.isFinished = true</span>
-<span class="cstat-no" title="statement not covered" >      console.log("hello")</span>
+      
     }
 &nbsp;
 <span class="cstat-no" title="statement not covered" >    await api.put(`/library/${num}`, bookInfo)</span>
-    
-  }
+    }
+&nbsp;
   let navigate = useNavigate()
   let showDetailsPage = <span class="fstat-no" title="function not covered" >()</span> =&gt; {
 <span class="cstat-no" title="statement not covered" >    navigate('/bookdetails')</span>
@@ -919,7 +913,7 @@ return (
     &lt;ThemeProvider theme={theme}&gt;
       &lt;MainContainer onClick={onClick}&gt;
         &lt;ImageContainer&gt;
-          &lt;img src={image} alt="Picture_"/&gt;
+          &lt;img src={image} alt="Picture_" onClick={showDetailsPage}/&gt;
         &lt;/ImageContainer&gt;
         &lt;InfoContainer&gt;
           &lt;Typography
@@ -930,7 +924,7 @@ return (
           &gt;
             {title}
           &lt;/Typography&gt;
-          &lt;Typography variant="body1" className={styles.author}&gt;
+          &lt;Typography variant="body1" className={styles.author} onClick={showDetailsPage}&gt;
             {author}
           &lt;/Typography&gt;
         &lt;/InfoContainer&gt;
@@ -988,7 +982,7 @@ return (
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at Mon Jun 13 2022 20:58:41 GMT+0530 (India Standard Time)
+                at Wed Jun 15 2022 10:43:52 GMT+0530 (India Standard Time)
             </div>
         <script src="../../../../prettify.js"></script>
         <script>
